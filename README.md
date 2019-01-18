@@ -1,3 +1,3 @@
 # Shopping List App Challenge
 
-This repo contains starter files for the *Shopping List App* challenge.
+A jQuery project that contains a shopping list that users can add, check, uncheck, and remove items from the list.
