@@ -1,3 +1,4 @@
+//Adds new item
 $('#js-shopping-list-form').on('submit', function(e) {
 
     let text = $('#shopping-list-entry').val();
@@ -14,8 +15,14 @@ $('#js-shopping-list-form').on('submit', function(e) {
             '</div>' + 
         '</li>');
 
-    $('#shopping-list-entry').val();
     $('#shopping-list-entry').val('');
-
     e.preventDefault();
+});
+//Toggles checked function 
+$('.shopping-list').on('click', '.shopping-item-toggle', function(e) {
+    $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+});
+//Deletes items
+$('.shopping-list').on('click', '.shopping-item-delete', function(e) {
+    $(this).closest('li').remove();
 });
